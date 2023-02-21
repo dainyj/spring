@@ -18,13 +18,21 @@
 	</properties>
 	<dependencies>
 
-		<!--spring-boot-devtools-->
+
+
+		<!--Thymeleaf Layout Dialect (하나의 레이아웃을 여러 페이지에 똑같이 적용) 추가-->
+		<dependency>
+			<groupId>nz.net.ultraq.thymeleaf</groupId>
+			<artifactId>thymeleaf-layout-dialect</artifactId>
+			<version>3.2.0</version>
+			<!--책은 2.5.1버전 최신은 3.2.0버전-->
+		</dependency>
+
+		<!--spring-boot-devtools 의존성 추가-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-
-
 
 		<!--Querydsl을 사용하기 위한 설정 추가-->
 		<dependency>
@@ -37,7 +45,6 @@
 			<artifactId>querydsl-apt</artifactId>
 			<version>5.0.0</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" >
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
 </head>
+<!--http://localhost/thymeleaf/ex06-->
 <body>
-	<p th:text="${data}">Hello Thymeleaf!!</p>
 
+	<h1>파마미터 전달 예제</h1>
+	<div th:text="${param1}"></div>
+	<div th:text="${param2}"></div>
+
+	<div>
+		<a th:href="@{http://localhost/thymeleaf/ex01}">예제1 페이지 이동</a>
+	</div>
 	<div>
 		<a th:href="@{http://localhost/thymeleaf/ex02}">예제2 페이지 이동</a>
 	</div>
@@ -19,8 +26,5 @@
 	<div>
 		<a th:href="@{http://localhost/thymeleaf/ex05}">예제5 페이지 이동</a>
 	</div>
-
-
-
 </body>
 </html>
